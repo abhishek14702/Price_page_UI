@@ -105,39 +105,63 @@
                 </div>
             </div>
         </div>
-        <div class="modal" id="myModal">
+        <div >
+        <div class="modal modal-dialog modal-dialog-scrollable" id="myModal">
             <div class="modal-content">
                 <span class="close" id="closeModalBtn">&times;</span>
                 <h2>Modal Form</h2>
-                <form id="myForm">
-                    <div class="input-container">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <form id="pricingForm" method="POST" action="https://forms.maakeetoo.com/formapi/763">
+                    <div class="form-group">
+                        <label for="firstname">First Name:</label>
+                        <input type="text" class="form-control" id="firstname" name="firstname" required>
                     </div>
-                    <div class="input-container">
+                    <div class="form-group">
+                        <label for="middlename">middle Name:</label>
+                        <input type="text" class="form-control" id="middlename" name="middlename" required>
+                    </div>
+                    <div class="form-group">
                         <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        <input type="email" class="form-control" id="email" name="email" required>
                     </div>
-                    <div class="input-container">
-                        <label for="inputBox">Comments:</label>
-                        <input type="text" id="inputBox" name="inputBox" placeholder="Type here" required>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea class="form-control" id="message" name="message" required></textarea>
                     </div>
-                    <div class="input-container">
-                        <label for="slider">Select a Value:</label>
-                        <input type="range" id="slider" name="slider" min="0" max="100">
-                        <input type="text" id="sliderValue" name="sliderValue" placeholder="Slider Value" readonly>
-    
+                    <div class="form-group">
+                        <label for="lastname">lastname:</label>
+                        <input type="text" class="form-control" id="lastname" name="lastname" required>
                     </div>
-                    <div class="input-container">
-                        <label for="radio-options">Select a Plan:</label>
-                        <div id="radio-options">
-                            <input type="radio" id="free" name="plan" value="free">
-                            <label for="free">Free (0-20)</label>
-                            <input type="radio" id="pro" name="plan" value="pro">
-                            <label for="pro">Pro (20-50)</label>
-                            <input type="radio" id="enterprise" name="plan" value="enterprise">
-                            <label for="enterprise">Enterprise (50-100)</label>
-                        </div>
+                    <div class="form-group">
+                        <label for="phonenumber1">phonenumber1:</label>
+                        <input type="number" class="form-control" id="phonenumber1" name="phonenumber1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phonenumber2">phonenumber2:</label>
+                        <input type="number" class="form-control" id="phonenumber2" name="phonenumber2" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phonenumber3">phonenumber3:</label>
+                        <input type="number" class="form-control" id="phonenumber3" name="phonenumber3" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dob">dob:</label>
+                        <input type="date" class="form-control" id="dob" name="dob" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">address:</label>
+                        <input type="text" class="form-control" id="address" name="address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="city">city:</label>
+                        <input type="text" class="form-control" id="city" name="city" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="country">country:</label>
+                        <input type="text" class="form-control" id="country" name="country" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="state">state:</label>
+                        <input type="text" class="form-control" id="state" name="state" required>
                     </div>
                     <div class="button-container">
                         <button type="button" id="closeModalBtn">Close</button>
@@ -145,7 +169,11 @@
                     </div>
                 </form>
             </div>
-            <div class="toast" id="toast">Form submitted successfully! Congrats!!</div>
+            <div class="toast" id="successToast">
+                Form submitted successfully!
+            </div>
+            
+        </div>
         </div>
         <footer class="pt-4 my-md-5 pt-md-5 border-top">
             <div class="row">
