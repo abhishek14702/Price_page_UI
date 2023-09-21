@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Pricing Template</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bd-navbarr">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="#">NextGrowth Labs</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Support</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Products</a>
+                  </li>
+              </ul>
+              <form class="form-inline mt-2 mt-md-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+      </div>
+    <div class="container">
+        <div class="text-center mt-5">
+            <h1 class="display-4">Pricing</h1>
+            <p class="font-thin">Select Number of users according to your needs</p>
+        </div>
+    <div class="slider-main ">
+      
+        <div class="value">0</div>
+        <input type="range" min="0" max="100" step="1" value="0">
+    </div>
+        <div class="card-deck mb-3 text-center">
+            
+            
+            <div class="card mb-4 box-shadow" id="free-plan">
+                <div class="text-center pt-1 pb-2">
+                    <span id="most-popular-label-on" class="text-primary-on-color body-xs-medium"></span>
+                </div>
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Free</h4>
+                </div>
+                <div class="card-body">
+                    <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>10 users included</li>
+                        <li>2 GB of storage</li>
+                        <li>Email support</li>
+                        <li>Help center access</li>
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-block btn-outline-primary signup1"id="openModalBtn">Sign up for free</button>
+                </div>
+                
+            </div>
+            <div class="card mb-4 box-shadow" id="pro-plan">
+                <div class="text-center pt-1 pb-2">
+                    <span id="most-popular-label-tw" class="text-primary-on-color body-xs-medium"></span>
+                </div>
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Pro</h4>
+                </div>
+                <div class="card-body">
+                    <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>20 users included</li>
+                        <li>10 GB of storage</li>
+                        <li>Priority email support</li>
+                        <li>Help center access</li>
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-block btn-primary signup2"id="openModalBtn">Get started</button>
+                </div>
+            </div>
+            <div class="card mb-4 box-shadow" id="enterprise-plan">
+                <div class="text-center pt-1 pb-2">
+                    <span id="most-popular-label-th" class="text-primary-on-color body-xs-medium"></span>
+                </div>
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Enterprise</h4>
+                </div>
+                <div class="card-body">
+                    <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>30 users included</li>
+                        <li>15 GB of storage</li>
+                        <li>Phone and email support</li>
+                        <li>Help center access</li>
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-block btn-primary signup2" id="openModalBtn">Contact us</button>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="myModal">
+            <div class="modal-content">
+                <span class="close" id="closeModalBtn">&times;</span>
+                <h2>Modal Form</h2>
+                <form id="myForm">
+                    <div class="input-container">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="inputBox">Comments:</label>
+                        <input type="text" id="inputBox" name="inputBox" placeholder="Type here" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="slider">Select a Value:</label>
+                        <input type="range" id="slider" name="slider" min="0" max="100">
+                        <input type="text" id="sliderValue" name="sliderValue" placeholder="Slider Value" readonly>
+    
+                    </div>
+                    <div class="input-container">
+                        <label for="radio-options">Select a Plan:</label>
+                        <div id="radio-options">
+                            <input type="radio" id="free" name="plan" value="free">
+                            <label for="free">Free (0-20)</label>
+                            <input type="radio" id="pro" name="plan" value="pro">
+                            <label for="pro">Pro (20-50)</label>
+                            <input type="radio" id="enterprise" name="plan" value="enterprise">
+                            <label for="enterprise">Enterprise (50-100)</label>
+                        </div>
+                    </div>
+                    <div class="button-container">
+                        <button type="button" id="closeModalBtn">Close</button>
+                        <button type="submit" id="submitBtn">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="toast" id="toast">Form submitted successfully! Congrats!!</div>
+        </div>
+        <footer class="pt-4 my-md-5 pt-md-5 border-top">
+            <div class="row">
+                <div class="col-12 col-md">
+                    <small class="d-block mb-3 text-muted">© 2023</small>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+    <button id="getDataButton">GET Data</button>
+
+    <!-- Create a container to display the retrieved data -->
+    <div id="dataContainer"></div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="script.js" ></script>
+</body>
+</html>
