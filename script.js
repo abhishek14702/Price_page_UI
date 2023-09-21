@@ -146,7 +146,7 @@ function openModal() {
         method: "POST",
         headers: {
           "Content-type": "application/json; charset=UTF-8",
-          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Origin": "https://price-page-ui.vercel.app/",
           "AccessCode": "5133D6YDPLFVKX3UU3RSSLN63",
         },
         body: JSON.stringify(formData),
@@ -220,13 +220,13 @@ function fetchData() {
     // Replace with your actual API endpoint
     const accessCode = "5133D6YDPLFVKX3UU3RSSLN63"; 
     const apiUrl = "https://forms.maakeetoo.com/formapi/748";
-    //const proxyServer = "https://cors-anywhere.herokuapp.com/";
+    const proxyServer = "https://cors-anywhere.herokuapp.com/";
     // Make a GET request to the endpoint with the access code in the header
     fetch("https://forms.maakeetoo.com/formapi/748", {
         method: "GET",
         headers: {
             "Content-type": "application/json; charset=UTF-8",
-            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Origin": "https://price-page-ui.vercel.app/",
             "AccessCode": "5133D6YDPLFVKX3UU3RSSLN63",
         }
     })
