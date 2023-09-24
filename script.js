@@ -118,29 +118,12 @@ document.addEventListener("DOMContentLoaded", function () {
           modal.style.display = "none";
       }
   });
-  const successToast = document.getElementById('successToast');
-    
-  function showSuccessToast() {
-      successToast.style.display = "block";
-
-      setTimeout(function () {
-          successToast.style.display = "none";
-      }, 3000); // Hide the toast after 3 seconds (adjust as needed)
-  }
+  
   pricingForm.addEventListener('submit', function (e) {
       e.preventDefault();
 
       const firstname = document.getElementById('firstname').value;
-      const middlename = document.getElementById('middlename').value;
-      const lastname = document.getElementById('lastname').value;
-      const phonenumber1 = document.getElementById('phonenumber1').value;
-      const phonenumber2 = document.getElementById('phonenumber2').value;
-      const phonenumber3 = document.getElementById('phonenumber3').value;
-      const dob = document.getElementById('dob').value;
-      const address = document.getElementById('address').value;
-      const city = document.getElementById('city').value;
-      const state = document.getElementById('state').value;
-      const country = document.getElementById('country').value;
+     
       const email = document.getElementById('email').value;
       const message = document.getElementById('message').value;
 
@@ -201,3 +184,4 @@ document.addEventListener("DOMContentLoaded", function () {
   
   
 });
+//Abhishek Bishnoi

@@ -189,43 +189,7 @@ button#closeModalBtn {
 }
 
 
-/* Add this to your CSS stylesheet or <style> section in the HTML */
-
-.toast {
-    display: none; /* Initially hide the toast */
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #4CAF50; /* Background color for success */
-    color: white; /* Text color */
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    z-index: 1000; /* Ensure it appears above other content */
-}
 
 /* Add this CSS to your existing style.css or within a <style> tag in your HTML */
 
 /* Style for the modal content */
-.modal-content {
-    padding: 20px;
-    border-radius: 10px;
-}
-
-/* Style for the close button */
-.close {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    font-size: 24px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-/* Style for the modal title */
-.modal h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
