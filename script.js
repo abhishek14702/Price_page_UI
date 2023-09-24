@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const mostPopularLabelth = document.getElementById('most-popular-label-th');
   const pricingContainer = document.querySelector('.pricing-container');
 
-  const pricingForm = document.getElementById("pricingForm"); // Replace with the appropriate form ID
+  const pricingForm = document.getElementById("pricingForm"); 
 
   elem.addEventListener("input", function () {
       var newValue = elem.value;
@@ -129,7 +129,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       const formData = new FormData(pricingForm);
 
-      const apiUrl = "https://forms.maakeetoo.com/formapi/763";
+      const apiUrl = "https://forms.maakeetoo.com/formapi/816";
 
       fetch(apiUrl, {
           method: 'POST',
@@ -151,36 +151,6 @@ document.addEventListener("DOMContentLoaded", function () {
       
       modal.style.display = "none"; // Close the modal
   });
-  const getDataButton = document.getElementById("getDataButton");
-  getDataButton.addEventListener("click", fetchData);
-  
-  function fetchData() {
-    const apiUrl = "https://forms.maakeetoo.com/formapi/763"; // Replace with your API endpoint URL
-    const accessCode = "S1L9NN32XV18T8822JQI054VO"; // Replace with your actual access code
-    const dataContainer = document.getElementById("dataContainer");
-  
-    fetch(apiUrl, {
-      method: "GET",
-      headers: {
-        "Code": accessCode
-      }
-    })
-      .then((response) => {
-        if (response.ok) {
-          return response.text(); // Use response.text() to get the HTML content
-        } else {
-          throw new Error("An error occurred.");
-        }
-      })
-      .then((data) => {
-        dataContainer.innerHTML = data; // Insert the HTML table into the container
-      })
-      .catch((error) => {
-        console.error("Error:", error);
-        alert("An error occurred while fetching data from the API.");
-      });
-  }
-  
   
   
 });
